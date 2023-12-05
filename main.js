@@ -1,6 +1,8 @@
+import { getJoao, getMaria } from './joaoEMaria.js';
 
 // main.js 
 console.log('módulo main');
 
-// joaoEMaria.js
-console.log ('módulo joaoEMaria');
+console.log ('João tem', getJoao(), 'maçãs!');
+console.log ('Maria tem', getMaria(), 'maçãs!');
+
