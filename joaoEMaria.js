@@ -1,24 +1,29 @@
-// joaoEMaria.js
-console.log('módulo joaoEMaria');
+const { findSourceMap } = require("module");
 
 let joao = 1;
 let maria = 2;
 
-function getMaria() {
+function getMaria(){
     return maria;
-}   
-
-function getJoao() {
+}
+function getJoao(){
     return joao;
-}   
-
-function setJoao(novoValor) {
-    joao = novoValor;
 }
 
-function setMaria(novoValor) {
-    maria = novoValor;
-}   
+function setMaria(valor){
+    maria = valor;
+}
+function setJoao(valor){
+    joao = valor;
+}
 
+function deJoaoParaMaria(){
+    maria += joao;
+    joao = 0;
+}
+function deMariaParaJoao(){
+    joao += maria;
+    maria = 0;
+}
 
-export { getJoao, getMaria, setMaria, setJoao }
+export {getJoao,getMaria,setJoao,setMaria,deJoaoParaMaria,deMariaParaJoao};
